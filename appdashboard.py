@@ -9,8 +9,8 @@ import os
 st.set_page_config(page_title="Dashboard de Productividad", page_icon="📊", layout="wide")
 
 # --- 1. CONFIGURACIÓN DE FUENTE DE DATOS (GOOGLE SHEETS) ---
-GSHEET_ID = "1rS3nZ-LBiACn_PIcIaGYCh6O6PROATCjLHMz0YED9fE"
-GSHEET_URL_BASE = f"https://docs.google.com/spreadsheets/d/{GSHEET_ID}/gviz/tq?tqx=out:csv&sheet="
+GSHEET_ID = "1FzDU1Bz_Cp5Rr0-YjFWdMmOv8G-Re_Uh2IB8wWimfks/edit?usp=sharing"
+GSHEET_URL_BASE = f"https://docs.google.com/spreadsheets/d/1FzDU1Bz_Cp5Rr0-YjFWdMmOv8G-Re_Uh2IB8wWimfks/edit?usp=sharing"
 
 PERSISTED_DATA_DIR = "persisted_data"
 os.makedirs(PERSISTED_DATA_DIR, exist_ok=True)
@@ -175,3 +175,4 @@ with tab_rips:
 
 with tab_fact:
     procesar_y_graficar(st.session_state.df_facturacion, "Facturación")
+
